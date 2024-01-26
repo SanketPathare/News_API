@@ -10,9 +10,7 @@ const options = [
   "science",
   "sports",
   "technology",
-  "business",
-
-
+  
 ];
 
 let requestURL;
@@ -63,8 +61,9 @@ const selectCategory = (e, category) => {
 
 const createOptions = () => {
   for (let i of options) {
-    optionsContainer.innerHTML += `<button class="option ${i == "general" ? "active" : ""
-      }" onclick="selectCategory(event,'${i}')">${i}</button>`;
+    optionsContainer.innerHTML += `<button class="option ${
+      i == "general" ? "active" : ""
+    }" onclick="selectCategory(event,'${i}')">${i}</button>`;
   }
 };
 
