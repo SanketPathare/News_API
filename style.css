@@ -56,12 +56,12 @@ img {
 .news-card {
   display: grid;
   position: relative;
-  grid-template-rows: auto 1fr ;
+  grid-template-rows: auto 1fr;
   box-shadow: 0 0 15px rgba(85, 85, 85, 0.2);
   margin: 1em 0;
   border-radius: 15px;
 }
-.news-card:hover{
+.news-card:hover {
   box-shadow: 0 0 15px rgba(28, 238, 154, 0.2);
 }
 
@@ -94,7 +94,6 @@ img {
   padding: 0.3em 0.2em;
   border-radius: 5px;
   transition: 0.5s;
-  
 }
 .view-button:hover {
   background-color: #fff;
