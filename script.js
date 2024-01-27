@@ -10,7 +10,7 @@ const options = [
   "science",
   "sports",
   "technology",
-  
+  "business",
 ];
 
 let requestURL;
