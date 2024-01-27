@@ -1,7 +1,7 @@
 
 const container = document.querySelector(".container");
 const optionsContainer = document.querySelector(".options-container");
-const apiKey = "d253fbc56fa147339b4cb8d393b27e26";
+
 const country = "in";
 const options = [
   "general",
@@ -53,7 +53,7 @@ const selectCategory = (e, category) => {
   options.forEach((element) => {
     element.classList.remove("active");
   });
-  requestURL = `https://newsapi.org/v2/top-headlines?country=${country}&category=${category}&apiKey=${apiKey}`;
+  requestURL = `https://saurav.tech/NewsAPI/top-headlines/category/${category}/in.json`;
   e.target.classList.add("active");
   getNews();
 };
@@ -74,6 +74,6 @@ const init = () => {
 };
 
 window.onload = () => {
-  requestURL = `https://newsapi.org/v2/top-headlines?country=${country}&category=general&apiKey=${apiKey}`;
+  requestURL = `https://saurav.tech/NewsAPI/top-headlines/category/general/in.json`;
   init();
 };
